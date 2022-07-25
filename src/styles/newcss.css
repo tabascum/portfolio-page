@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: fixed #080c24bf;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    border: #651ED3 solid .08em;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 10vh;
+    height: 80vh;
+    animation: flicker 2s infinite alternate;
+    box-shadow: 
+    0 0 7px #651ED3,
+    0 0 10px #651ED3,
+    0 0 42px #651ED3;
+}
+
+nav {
+    display: flex;
+    margin-right: 2.5em;
+    align-self: end;
+    gap: 1.5em;
+}
+
+.fa-brands {
+    color: #ffffff;
+    font-size: 2em;
+    text-shadow: .1em .1em .1em #651ED3;
+}
+
+.fa-brands:hover {
+    color: #fb0c70;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/*
+
+.social-hide {
+    display: none;
+}
+
+a:hover + .social-hide {
+    display: block;
+    padding-top: 1em;
+    color: #FB0c70;
+}
+
+@media screen {
+    
+}
+
+*/
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+}
+
+img {
+    background: transparent;
+    width: 30%;
+    border-radius: 50%;
+}
+
+.letters {
+    background: linear-gradient(to right, #651ED3 0%, #FB0c70 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        box-shadow:
+        0 0 7px #651ED3,
+        0 0 10px #651ED3,
+        0 0 42px #651ED3;
+    }
+    
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }    
+  }
+
+.low-container {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.low-content {
+    padding: .25em .6em;
+    box-shadow: .1em .1em .1em #651ED3;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+button {
+    border: none;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+}
+
+button:hover {
+    transform: scale(1.2);
+    transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: .08em .08em .08em .08em  #fb0c70;
+}
+

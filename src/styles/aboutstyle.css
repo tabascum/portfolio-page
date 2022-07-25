@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: fixed #080c24f2;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+}
+.tech-container,
+.tools,
+.frameworks {
+    display: flex;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.fa, 
+.fa-brands {
+    fill: #fb0c70;
+    text-align: center;
+    font-size: 5em;
+    color: #fb0c70;
+    text-shadow: .08em .08em .08em #651ED3bb;
+}
+
+.color {
+    background: url(visual-studio-code.svg);
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    padding: 10% 4%;
+    margin: 10% 5%;
+    background-color: #080c24bf;
+    border: #651ed3 solid 1px;
+    box-shadow: .05em .5em .5em .5em #661ed3bb;
+}
+
