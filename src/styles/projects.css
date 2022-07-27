@@ -25,7 +25,7 @@ section {
 
 h1 {
     margin-bottom: 2em;
-    background: #ffffff;
+    background: linear-gradient(to right, #651ED3 0%, #FB0c70 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -38,15 +38,35 @@ img {
 
 .card {
     color: #fb0c70;
-    background-color: #080c24bf;
+    background-color: #080c24;
     border: #651ed3 solid .08em;
     box-shadow: .5em .5em .6em #661ed3bb;
-    margin: 0 1em;
+    margin: 0 -3em;
     height: 50vh;
     width: 20%;
     justify-content: center;
 }
 
-.card a {
+.card:hover {
+    margin: 0 4em;
+    transition: 1s;
+    transform: rotate(5%);
+}
+
+/* animate: shadow 1s infinite */
+
+/*  
+@keyframes shadow {
+    from {box-shadow: .5em .5em .6em #661ed3bb;}
+    to {box-shadow: .5em .5em .6em #fb0c70bb;}  
+}
+
+*/
+
+a {
     text-decoration: none;
+}
+
+.card-body {
+    padding: .5em;
 }
