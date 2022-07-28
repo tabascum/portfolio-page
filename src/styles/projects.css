@@ -24,7 +24,6 @@ section {
 }
 
 h1 {
-    margin-bottom: 2em;
     background: linear-gradient(to right, #651ED3 0%, #FB0c70 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -32,7 +31,6 @@ h1 {
 }
 
 img {
-    background: cover;
     width: 100%;
 }
 
@@ -42,15 +40,17 @@ img {
     border: #651ed3 solid .08em;
     box-shadow: .5em .5em .6em #661ed3bb;
     margin: 0 -3em;
-    height: 50vh;
-    width: 20%;
+    height: 60vh;
+    width: 25%;
+    filter: grayscale(50%);
     justify-content: center;
+    transition: 1s;
 }
 
 .card:hover {
     margin: 0 4em;
-    transition: 1s;
-    transform: rotate(5%);
+    transform: scale(2em);
+    filter: none;
 }
 
 /* animate: shadow 1s infinite */
