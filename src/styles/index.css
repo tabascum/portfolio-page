@@ -49,7 +49,7 @@ main {
 
 nav {
     display: flex;
-    margin-right: 2.5em;
+    margin-right: 1em;
     align-self: end;
     gap: 1.5em;
 }
