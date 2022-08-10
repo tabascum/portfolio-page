@@ -1,4 +1,4 @@
-/* function to animate text */
+//function to animate text
 
 let i = -1;
 let txt = 'FrontEnd Web Developer'; /* The text */
@@ -14,8 +14,6 @@ function typeWriter() {
 
 typeWriter();
 
-
-  /* modals */
 
 
 

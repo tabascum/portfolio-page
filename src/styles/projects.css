@@ -1,9 +1,13 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
     background: #080c24;
     font-family: 'Open Sans', sans-serif;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -15,8 +19,7 @@ main {
     flex-direction: column;
     border: #651ED3 solid .02em;
     align-items: center;
-    justify-content: space-around;
-    margin: 0 10em;
+    justify-content: space-evenly;
     height: 80vh;
     box-shadow: 
     0 0 7px #651ED3,
@@ -26,8 +29,7 @@ main {
 
 section {
     display: flex;
-    justify-content: center;
-    padding-bottom: 2.5em;
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -40,29 +42,40 @@ h1 {
 }
 
 @keyframes colorMove {
-    to {background-position: 200% center;}
-}
-
-img {
-    width: 100%;
+    to {
+        background-position: 200% center;
+    }
 }
 
 .card {
     color: #fb0c70;
     background-color: #080c24;
     border: #651ed3 solid .08em;
-    box-shadow: .5em .5em .6em #661ed3bb;
-    margin: 0 -3em;
+    box-shadow: .5em .5em .6em #661ed39d;
     width: 25%;
-    filter: grayscale(50%);
-    justify-content: center;
+    justify-content: space-around;
     transition: 1s;
 }
 
 .card:hover {
-    margin: 0 4em;
-    transform: scale(2em);
-    filter: none;
+    animation: flicker 2s infinite alternate;
+    box-shadow: 
+    0 0 7px #651ED3,
+    0 0 10px #651ED3,
+    0 0 42px #651ED3;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        box-shadow:
+        0 0 7px #651ED3,
+        0 0 10px #651ED3,
+        0 0 42px #651ED3;
+    }
+    
+    5%, 20%, 24%, 55% {        
+        box-shadow: none;
+    }    
 }
 
 /* animate: shadow 1s infinite */

@@ -17,8 +17,8 @@ main {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: inherit;
+    position: absolute;
     height: 80vh;
-    padding: 0 4em;
     border: #651ED3 solid .08em;
     box-shadow: 
     0 0 7px #651ED3,
@@ -85,5 +85,6 @@ h1 {
 @keyframes colorMove {
     to {background-position: 200% center;}
 }
+
 
 
